@@ -14,13 +14,17 @@ class Html extends BaseHtml
 {
     /**
      * @param string|null $href
+     * @param string|null $rel
+     * @param string|null $type
      *
      * @return \Martyb\Html\Elements\Link
      */
-    public function link($href = null)
+    public function link($href = null, $rel = null, $type = null)
     {
         return Link::create()
-            ->attributeIf($href, 'src', $href);
+            ->attributeIf($href, 'href', $href)
+            ->attributeIf($rel, 'rel', $rel)
+            ->attributeIf($type, 'type', $type);
     }
 
     /**

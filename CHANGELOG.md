@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.2 - 2018-10-12
+- Added `rel` and `type` methods to `Link`
+
 ## 1.0.1 - 2018-10-12
 - Added changelog info
 - Updated the `README.md` a little

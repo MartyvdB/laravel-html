@@ -19,6 +19,16 @@ class Link extends BaseElement
     }
 
     /**
+     * @param string|null $rel
+     *
+     * @return static
+     */
+    public function rel($rel)
+    {
+        return $this->attribute('rel', $rel);
+    }
+
+    /**
      * @param string|null $type
      *
      * @return static
