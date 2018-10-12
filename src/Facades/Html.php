@@ -10,7 +10,7 @@ class Html extends BaseFacade
     /**
      * Get the registered name of the component.
      *
-     * @see \martyb\Html\Html
+     * @see \Martyb\Html\Html
      *
      * @return string
      */

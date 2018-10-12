@@ -3,9 +3,9 @@
 namespace Martyb\Html;
 
 use Illuminate\Http\Request;
-use Mvdberg\Html\Elements\Link;
-use Mvdberg\Html\Elements\Script;
-use Mvdberg\Html\Elements\Style;
+use Martyb\Html\Elements\Link;
+use Martyb\Html\Elements\Script;
+use Martyb\Html\Elements\Style;
 use Illuminate\Support\Collection;
 use Illuminate\Support\HtmlString;
 use Spatie\Html\Html as BaseHtml;
@@ -15,7 +15,7 @@ class Html extends BaseHtml
     /**
      * @param string|null $href
      *
-     * @return \Mvdberg\Html\Elements\Link
+     * @return \Martyb\Html\Elements\Link
      */
     public function link($href = null)
     {
@@ -27,7 +27,7 @@ class Html extends BaseHtml
      * @param string|null $contents
      * @param string|null $src
      *
-     * @return \Mvdberg\Html\Elements\Script
+     * @return \Martyb\Html\Elements\Script
      */
     public function script($contents = null, $src = null)
     {
@@ -38,9 +38,8 @@ class Html extends BaseHtml
 
     /**
      * @param string|null $contents
-     * @param string|null $src
      *
-     * @return \Mvdberg\Html\Elements\Style
+     * @return \Martyb\Html\Elements\Style
      */
     public function style($contents = null)
     {
